@@ -1,0 +1,394 @@
+<!doctype html>
+
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact | MAGWET GROUP</title>
+
+    <meta name="description" content="Contactez MAGWET GROUP pour vos besoins en transport routier, logistique, transit et maintenance." />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+
+    <link rel="stylesheet" href="assets/css/contact.css" />
+  </head>
+
+  <body>
+    <!-- HEADER -->
+
+    <header class="site-header" id="siteHeader">
+      <div class="container header-inner">
+        <a href="index.html" class="brand">
+          <span class="brand-main">MAGWET</span>
+          <span class="brand-sub">GROUP</span>
+        </a>
+
+        <button class="nav-toggle" id="navToggle" aria-label="Ouvrir le menu" aria-expanded="false">
+          <i class="fas fa-bars"></i>
+        </button>
+
+        <nav class="main-nav">
+          <ul class="nav-list" id="navList">
+            <li>
+              <a href="index.html" class="nav-link"> Accueil </a>
+            </li>
+
+            <li>
+              <a href="services.html" class="nav-link"> Services </a>
+            </li>
+
+            <li>
+              <a href="a-propos.html" class="nav-link"> À propos </a>
+            </li>
+
+            <li>
+              <a href="nosprojets.html" class="nav-link"> Nos projets </a>
+            </li>
+
+            <li>
+              <a href="contact.html" class="nav-link active nav-contact"> Contact </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- HERO -->
+
+    <section class="contact-hero">
+      <div class="hero-overlay"></div>
+
+      <div class="container hero-content" data-aos="fade-up">
+        <span class="hero-tag">
+          <i class="fas fa-comments"></i>
+          MAGWET GROUP
+        </span>
+
+        <h1>
+          Parlons de votre
+          <span>projet</span>
+        </h1>
+
+        <p>Une question, une demande de devis ou un projet logistique ? Notre équipe est à votre écoute.</p>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+
+    <main>
+      <section class="contact-section">
+        <div class="container">
+          <div class="contact-grid">
+            <!-- INFORMATIONS -->
+
+            <div class="contact-info" data-aos="fade-right">
+              <span class="section-tag"> Contactez-nous </span>
+
+              <h2>
+                Nous sommes à votre
+                <span>écoute</span>
+              </h2>
+
+              <p class="intro">MAGWET GROUP vous accompagne dans vos opérations de transport, de logistique et de transit.</p>
+
+              <div class="info-list">
+                <div class="info-item">
+                  <div class="info-icon">
+                    <i class="fas fa-location-dot"></i>
+                  </div>
+
+                  <div>
+                    <h3>Adresse</h3>
+                    <p>Cameroun</p>
+                  </div>
+                </div>
+
+                <div class="info-item">
+                  <div class="info-icon">
+                    <i class="fas fa-phone"></i>
+                  </div>
+
+                  <div>
+                    <h3>Téléphone</h3>
+                    <p>+237 698 936 864</p>
+                  </div>
+                </div>
+
+                <div class="info-item">
+                  <div class="info-icon">
+                    <i class="fas fa-envelope"></i>
+                  </div>
+
+                  <div>
+                    <h3>Email</h3>
+                    <p>contact@magwetgroup.com</p>
+                  </div>
+                </div>
+
+                <div class="info-item">
+                  <div class="info-icon">
+                    <i class="fas fa-clock"></i>
+                  </div>
+
+                  <div>
+                    <h3>Horaires</h3>
+                    <p>Lundi – Vendredi : 08h00 – 18h00</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="contact-social">
+                <span> Suivez-nous </span>
+
+                <div class="social-links">
+                  <a href="#" aria-label="Facebook">
+                    <i class="fab fa-facebook-f"></i>
+                  </a>
+
+                  <a href="#" aria-label="Instagram">
+                    <i class="fab fa-instagram"></i>
+                  </a>
+
+                  <a href="#" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin-in"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- FORMULAIRE -->
+
+            <div class="contact-card" data-aos="fade-left">
+              <div class="form-header">
+                <span class="form-number"> 01 </span>
+
+                <div>
+                  <h2>Envoyez-nous un message</h2>
+
+                  <p>
+                    Les champs marqués d'un
+                    <strong>*</strong> sont obligatoires.
+                  </p>
+                </div>
+              </div>
+
+              <form id="contactForm" class="contact-form" novalidate>
+                <div class="form-row">
+                  <div class="form-group">
+                    <label for="name">
+                      Nom complet
+                      <span>*</span>
+                    </label>
+
+                    <div class="input-wrapper">
+                      <i class="fas fa-user"></i>
+
+                      <input type="text" id="name" name="name" placeholder="Votre nom complet" autocomplete="name" required />
+                    </div>
+
+                    <small class="error-message"></small>
+                  </div>
+
+                  <div class="form-group">
+                    <label for="email">
+                      Adresse email
+                      <span>*</span>
+                    </label>
+
+                    <div class="input-wrapper">
+                      <i class="fas fa-envelope"></i>
+
+                      <input type="email" id="email" name="email" placeholder="exemple@email.com" autocomplete="email" required />
+                    </div>
+
+                    <small class="error-message"></small>
+                  </div>
+                </div>
+
+                <div class="form-row">
+                  <div class="form-group">
+                    <label for="phone"> Téléphone </label>
+
+                    <div class="input-wrapper">
+                      <i class="fas fa-phone"></i>
+
+                      <input type="tel" id="phone" name="phone" placeholder="+237 6XX XXX XXX" autocomplete="tel" />
+                    </div>
+
+                    <small class="error-message"></small>
+                  </div>
+
+                  <div class="form-group">
+                    <label for="subject"> Sujet </label>
+
+                    <div class="input-wrapper">
+                      <i class="fas fa-tag"></i>
+
+                      <select id="subject" name="subject">
+                        <option value="">Sélectionner un sujet</option>
+
+                        <option value="transport">Transport routier</option>
+
+                        <option value="logistique">Logistique</option>
+
+                        <option value="transit">Transit</option>
+
+                        <option value="maintenance">Maintenance</option>
+
+                        <option value="devis">Demande de devis</option>
+
+                        <option value="autre">Autre demande</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="message">
+                    Votre message
+                    <span>*</span>
+                  </label>
+
+                  <div class="textarea-wrapper">
+                    <i class="fas fa-message"></i>
+
+                    <textarea id="message" name="message" rows="6" placeholder="Décrivez votre besoin ou votre projet..." required></textarea>
+                  </div>
+
+                  <small class="error-message"></small>
+                </div>
+
+                <div id="formMessage" class="form-message" role="status" aria-live="polite"></div>
+
+                <button type="submit" class="submit-btn" id="submitBtn">
+                  <span> Envoyer le message </span>
+
+                  <i class="fas fa-arrow-right"></i>
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA -->
+
+      <section class="contact-cta">
+        <div class="container" data-aos="zoom-in">
+          <div class="cta-icon">
+            <i class="fas fa-headset"></i>
+          </div>
+
+          <div class="cta-text">
+            <h2>Besoin d'une réponse rapide ?</h2>
+
+            <p>Notre équipe est disponible pour vous accompagner dans vos besoins logistiques.</p>
+          </div>
+
+          <a href="tel:+237000000000" class="btn btn-light">
+            <i class="fas fa-phone"></i>
+            Appelez-nous
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="brand">
+            <span class="brand-main"> MAGWET </span>
+
+            <span class="brand-sub"> GROUP </span>
+          </a>
+
+          <p>Votre partenaire de confiance pour le transport, la logistique et le transit.</p>
+
+          <div class="social-links">
+            <a href="" aria-label="Facebook">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+
+            <a href="#" aria-label="Instagram">
+              <i class="fab fa-instagram"></i>
+            </a>
+
+            <a href="#" aria-label="LinkedIn">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-column">
+          <h3>Navigation</h3>
+
+          <a href="index.html">Accueil</a>
+          <a href="services.html">Services</a>
+          <a href="a-propos.html">À propos</a>
+          <a href="nosprojets.html">Nos projets</a>
+          <a href="contact.html">Contact</a>
+        </div>
+
+        <div class="footer-column">
+          <h3>Services</h3>
+
+          <a href="services.html#transport"> Transport routier </a>
+
+          <a href="services.html#logistique"> Logistique </a>
+
+          <a href="services.html#transit"> Transit </a>
+
+          <a href="services.html#conseil"> Conseil & Assistance </a>
+        </div>
+
+        <div class="footer-column">
+          <h3>Contact</h3>
+
+          <p>
+            <i class="fas fa-location-dot"></i>
+            Cameroun
+          </p>
+
+          <p>
+            <i class="fas fa-phone"></i>
+            +237 698 936 864
+          </p>
+
+          <p>
+            <i class="fas fa-envelope"></i>
+            <a href="mailto:contact@magwetgroup.com">contact@magwetgroup.com</a>
+          </p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="container">
+          <p>
+            © <span id="year"></span>
+            MAGWET GROUP. Tous droits réservés.
+          </p>
+
+          <p>Transport & Logistique</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- BACK TO TOP -->
+
+    <button id="backToTop" class="back-to-top" aria-label="Retour en haut">
+      <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="assets/js/contact.js"></script>
+  </body>
+</html>
