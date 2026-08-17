@@ -169,6 +169,11 @@ const projectPanels =
     );
 
 
+if (!categoryButtons.length && !projectPanels.length) {
+    return;
+}
+
+
 function openProject(targetId) {
 
     if (!targetId) return;

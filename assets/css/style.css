@@ -66,7 +66,7 @@ left: 0;
 width: 100%;
 z-index: 1000;
 padding: 10px 0;
-background: transparent;
+background: white;
 transition: var(--transition);
 }
 
@@ -87,11 +87,12 @@ justify-content: space-between;
 /* ================= LOGO ================= */
 
 .logo {
-width: 90px;
-height: 60px;
+width: 72px;
+height: 48px;
 border-radius: 10%;
 object-fit: cover;
-margin-right: -300px;
+margin-right: 14px;
+flex: 0 0 auto;
 }
 
 .brand {
@@ -99,7 +100,9 @@ display: flex;
 align-items: center;
 font-weight: 800;
 letter-spacing: 0.5px;
-gap: 1px;
+gap: 7px;
+margin-right: auto;
+min-width: 0;
 
 }
 
@@ -913,8 +916,35 @@ transform: translateY(-3px);
 
 @media (max-width: 800px) {
 
+.header-inner {
+    justify-content: flex-start;
+    position: relative;
+}
+
+.logo {
+    width: 58px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+.brand {
+    margin-right: auto;
+    gap: 5px;
+}
+
+.brand-main {
+    font-size: 1.05rem;
+}
+
+.brand-sub {
+    font-size: 0.72rem;
+    padding: 3px 5px;
+}
+
 .nav-toggle {
     display: block;
+    position: absolute;
+    right: 0;
 }
 
 .nav-list {

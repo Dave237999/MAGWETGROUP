@@ -53,7 +53,7 @@ width: min(100% - 40px, var(--container));
 margin-inline: auto;
 }
 
-/* HEADER */
+/* HEADER - Correction : Fond blanc visible en permanence par défaut */
 
 .site-header {
 position: fixed;
@@ -61,14 +61,10 @@ top: 0;
 left: 0;
 width: 100%;
 z-index: 1000;
-
 padding: 10px 0;
-
-background: transparent;
-
+background: var(--white, #ffffff);
+box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
 transition: var(--transition);
-
-
 }
 
 .site-header.scrolled {
@@ -85,6 +81,15 @@ align-items: center;
 justify-content: space-between;
 
 
+
+.logo {
+width: 72px;
+height: 48px;
+border-radius: 10%;
+object-fit: cover;
+margin-right: 14px;
+flex: 0 0 auto;
+}
 }
 
 /* BRAND */
@@ -132,7 +137,7 @@ display: block;
 
 padding: 10px 13px;
 
-color: var(--white);
+color: var(--text);
 
 font-size: 0.9rem;
 font-weight: 500;
@@ -177,7 +182,7 @@ display: none;
 border: 0;
 background: transparent;
 
-color: var(--white);
+color: var(--dark);
 
 font-size: 1.3rem;
 
@@ -1016,9 +1021,37 @@ transform: translateY(-3px);
 
 @media (max-width: 850px) {
 
+.header-inner {
+    justify-content: flex-start;
+    position: relative;
+}
+
+.logo {
+    width: 58px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+.brand {
+    margin-right: auto;
+    gap: 5px;
+    min-width: 0;
+}
+
+.brand-main {
+    font-size: 1.05rem;
+}
+
+.brand-sub {
+    font-size: 0.72rem;
+    padding: 3px 5px;
+}
+
 
 .nav-toggle {
     display: block;
+    position: absolute;
+    right: 0;
 }
 
 .nav-list {
