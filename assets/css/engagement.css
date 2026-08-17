@@ -1561,3 +1561,61 @@ transform: translateY(-3px);
 .reveal-delay-2 { transition-delay: 0.2s; }
 .reveal-delay-3 { transition-delay: 0.3s; }
 .reveal-delay-4 { transition-delay: 0.4s; }
+
+
+/* =========================================
+   CORRECTION MENU MOBILE (HAMBURGER)
+========================================= */
+
+/* S'assure que le header est au premier plan */
+.site-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+/* Le bouton toggle doit être cliquable et au-dessus */
+.nav-toggle {
+    display: none; /* Affiché uniquement en responsive via les media queries */
+    position: relative;
+    z-index: 1001;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    font-size: 1.5rem;
+}
+
+@media (max-width: 850px) {
+    .nav-toggle {
+        display: block;
+    }
+
+    /* Comportement du menu déroulant mobile lorsqu'il est ouvert */
+    .nav-list {
+        position: fixed;
+        top: 75px;
+        right: 20px;
+        left: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        padding: 20px;
+        border-radius: 12px;
+        background: var(--white, #ffffff);
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(-10px);
+        transition: all 0.3s ease;
+        z-index: 999;
+    }
+
+    /* Classe activée par le JavaScript pour l'ouvrir */
+    .nav-list.open {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+    }
+}
