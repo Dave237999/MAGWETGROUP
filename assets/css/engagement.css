@@ -1619,3 +1619,81 @@ transform: translateY(-3px);
         transform: translateY(0);
     }
 }
+
+
+@media (max-width: 850px) {
+    .header-inner {
+        justify-content: flex-start;
+        position: relative;
+    }
+
+    .logo {
+        width: 58px;
+        height: 40px;
+        margin-right: 10px;
+    }
+
+    .brand {
+        margin-right: auto;
+        gap: 5px;
+        min-width: 0;
+    }
+
+    .brand-main {
+        font-size: 1.05rem;
+    }
+
+    .brand-sub {
+        font-size: 0.72rem;
+        padding: 3px 5px;
+    }
+
+    .nav-toggle {
+        display: block;
+        position: absolute;
+        right: 0;
+        z-index: 1001;
+    }
+
+    /* === MENU MOBILE POSITIONNÉ EN BAS / FLOTTANT === */
+    .nav-list {
+        position: fixed;
+        bottom: 20px;       /* Aligné vers le bas de l'écran */
+        left: 20px;
+        right: 20px;
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        padding: 15px;
+        border-radius: 20px;
+        background: var(--white);
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(20px); /* Arrive par le bas */
+        transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+        z-index: 1000;
+    }
+
+    /* Animation d'ouverture du menu */
+    .nav-list.open {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+    }
+
+    .nav-link {
+        color: var(--text) !important;
+        padding: 14px 18px;
+        border-radius: 10px;
+        font-size: 0.95rem;
+    }
+
+    /* Style spécifique pour le lien actif ou au survol dans le menu */
+    .nav-link.active, 
+    .nav-link:hover {
+        background: #f0f5ff;
+        color: var(--primary) !important;
+    }
+}
